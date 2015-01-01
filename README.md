@@ -1,7 +1,18 @@
+When [offliberty](http://offliberty.com) becomes slow or cumbersome for you, and other options are too expensive or malwary-suspicios (hello, 4k video downloader!), this simple AppleScript-based app comes very handy (I hope).
+
 youtube-dl-GUI
 ==============
 Minimalistic one-button "GUI" for youtube-dl, written in AppleScript (hence for OS X only, tested in Mavericks and Yosemite).  
 This simple app lets you download videos and extract audio from websites like YouTube, Vimeo, Mixcloud, Soundcloud etc. with a click of a button in your Dock.
+
+##Features
+* GUI w/o interface: click a button and job is done (most of the time)
+* Works with Safari and Chrome-based browsers
+* Downloads video or audio (or both) from any of the sites supported by youtube-dl ([full  list](http://rg3.github.io/youtube-dl/supportedsites.html), updated constantly)
+* Uses locally installed youtube-dl or prepackaged one (comes inside youtube-dl-GUI.app bundle)
+* Automatically updates youtube-dl if download fails
+
+##Usage
 
 1. Open a desired URL in Chrome or Safari.
 2. Click the app icon in your Dock.
@@ -12,11 +23,22 @@ The app uses an URL from the frontmost browser tab/window, and communicates back
 It would be a good idea to re-write this app in Python, to make it cross-platform and more feature-rich (see __To do__ section below). Maybe next year... :)  
 
 ##Prerequisites
-youtube-dl is required (URLs to installation and commands)  
+[youtube-dl](https://www.yt-dl.org) is used by this app. The app bundle already comes with youtube-dl in it, but you can install youtube-dl manually (will be used if installed).  
 ffmpeg is optional (required for extracting audio from downloaded videos)
 
-__Install ffmpeg__
-ffmpeg is not necessary, but it is required if you want to extract audio from downloaded videos (or download audio only).
+__Installing youtube-dl__  
+`youtube-dl` installation is _not_ required, as it comes inside this GUI app bundle, but if you like to have it properly installed:
+```
+sudo pip install --upgrade youtube_dl
+```
+or
+```
+brew install youtube-dl
+```
+For more installation options see http://rg3.github.io/youtube-dl/download.html
+
+__Installing ffmpeg__  
+`ffmpeg` is not necessary for video downloads, but it is needed if you want to extract audio from downloaded videos (or download audio only). Easiest ways to install:
 ```
 brew install ffmpeg 
 ```
@@ -26,26 +48,15 @@ port install ffmpeg
 ```
 or simply download a binary from http://ffmpegmac.net/ and put it into your `/usr/local/bin/` dir.
 
-__Install youtube-dl__
-`youtube-dl` installation is not required, as it comes inside this GUI app bundle, but if you like to have it properly installed:
-```
-sudo pip install --upgrade youtube_dl
-```
-or
-```
-brew install youtube-dl
-```
-For more installation options: http://rg3.github.io/youtube-dl/download.html
-
 ##Installation
 Download the _youtube-dl-GUI.app_ into your Applications folder and drag its icon onto your Dock.
 
 _Note: the app uses notifications for output, so enable Banners in your Notifications Center for more verbose operation._
 
 ##To do
-- Work with any browser (Safari, Canary, Firefox etc)
-- Auto-update yt-dn at least once a day
-- Auto-install ffmpeg and youtube-dl (if not installed)
+- ~~Work with any browser (Safari, Canary etc)~~
+- Auto-update yt-dn on request
+- Auto-install ffmpeg ~~and youtube-dl~~ (if not installed)
 - Download progress output (e.g. use Dock badges)
 - Create an Apple dev. profile and sign the app bundle
 - Checkbox to open Terminal (for verbosity)
