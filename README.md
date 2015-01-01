@@ -17,7 +17,7 @@ ffmpeg is optional (required for extracting audio from downloaded videos)
 
 __Install ffmpeg__
 ```
-lalala
+lalala 
 ```
 
 __Install youtube-dl__
