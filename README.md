@@ -49,9 +49,10 @@ port install ffmpeg
 or simply download a binary from http://ffmpegmac.net/ and put it into your `/usr/local/bin/` dir.
 
 ##Installation
-Download the _youtube-dl-GUI.app_ into your Applications folder and drag its icon onto your Dock.
+Download the _youtube-dl-GUI.app_ into your Applications folder and drag its icon onto your Dock.  
+The app uses notifications for output, so enable Banners in your Notifications Center for more verbose operation._
 
-_Note: the app uses notifications for output, so enable Banners in your Notifications Center for more verbose operation._
+_Note: the app is currently unsigned (I am not a developer),_ thus you may need to open System Preferences -> Security and Privacy -> General and allow youtube-dl-GUI to run. It is required only once. If this app becomes popular, I will sign the code to avoid this step.
 
 ##To do
 - ~~Work with any browser (Safari, Canary etc)~~
