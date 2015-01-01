@@ -16,17 +16,29 @@ youtube-dl is required (URLs to installation and commands)
 ffmpeg is optional (required for extracting audio from downloaded videos)
 
 __Install ffmpeg__
+ffmpeg is not necessary, but it is required if you want to extract audio from downloaded videos (or download audio only).
 ```
-lalala 
+brew install ffmpeg 
 ```
+or  
+```
+port install ffmpeg 
+```
+or simply download a binary from http://ffmpegmac.net/ and put it into your `/usr/local/bin/` dir.
 
 __Install youtube-dl__
+`youtube-dl` installation is not required, as it comes inside this GUI app bundle, but if you like to have it properly installed:
 ```
-blalala
+sudo pip install --upgrade youtube_dl
 ```
+or
+```
+brew install youtube-dl
+```
+For more installation options: http://rg3.github.io/youtube-dl/download.html
 
 ##Installation
-Download the _youtube-dl-GUI.app_ into your Applications folder and drag its icon to your Dock.
+Download the _youtube-dl-GUI.app_ into your Applications folder and drag its icon onto your Dock.
 
 _Note: the app uses notifications for output, so enable Banners in your Notifications Center for more verbose operation._
 
