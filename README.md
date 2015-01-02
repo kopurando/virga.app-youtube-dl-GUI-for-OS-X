@@ -8,6 +8,7 @@ This simple app lets you download videos and extract audio from websites like Yo
 ##Features
 * GUI w/o interface: click a button and job is done (most of the time)
 * Works with Safari and Chrome-based browsers
+* Multi-threaded: youtube-dl is forked, so the app can handle many simultaneous downloads
 * Downloads video or audio (or both) from any of the sites supported by youtube-dl ([full  list](http://rg3.github.io/youtube-dl/supportedsites.html), updated constantly)
 * Uses locally installed youtube-dl or prepackaged one (comes inside virga.app bundle)
 * Automatically updates youtube-dl if download fails
