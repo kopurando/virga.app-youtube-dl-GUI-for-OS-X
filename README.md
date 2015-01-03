@@ -8,25 +8,25 @@ This simple app lets you download videos and extract audio from websites like Yo
 ##Usage
 1. Open a desired URL in Chrome or Safari.
 2. Click the app icon in your Dock.
-3. Profit!
+3. Profit! Files are downloaded into your _Downloads/from youtube and others/_ folder
 
 The app uses an URL from the frontmost browser tab/window, and communicates back using Notification Center.  You can close browser tab or switch to another tab as soon as you click virga, download will finish in the background.
 
-If you like to use [custom parameters](https://github.com/rg3/youtube-dl), just create `~/.config/youtube-dl/config` and virga will use it.
+If you like to use [youtube-dl custom parameters](https://github.com/rg3/youtube-dl), just create `~/.config/youtube-dl/config` and virga will use it.
 
 ##Features
 * GUI w/o interface: click a button and job is done (most of the time)
 * Works with Safari and Chrome-based browsers
 * Multi-threaded: youtube-dl is forked, so the app can handle many simultaneous downloads
 * Downloads video or audio (or both) from any of the sites supported by youtube-dl ([full  list](http://rg3.github.io/youtube-dl/supportedsites.html), updated constantly)
-* Uses locally installed youtube-dl or prepackaged one (comes inside virga.app bundle)
+* Uses locally installed youtube-dl and ffmpeg or prepackaged ones (come inside virga.app bundle)
 * Automatically updates youtube-dl if download fails
 
 ###To do
 - ~~Work with any browser (Safari, Canary etc)~~
-- Auto-install ffmpeg ~~and youtube-dl~~ (if not installed)
+- ~~Auto-install ffmpeg and youtube-dl (if not installed)~~
 - ~~Auto-update yt-dn on request~~
-- Download progress output (e.g. use Dock badges)
+- Download progress output (e.g. use Dock badges or notifications center widgets?)
 - Create an Apple dev. profile and sign the app bundle
 - Checkbox to open Terminal (for verbosity)
 - Interactive notifications (open downloads folder or downloaded file)
@@ -35,32 +35,13 @@ If you like to use [custom parameters](https://github.com/rg3/youtube-dl), just 
 It would be a good idea to re-write whole app in Python, to make it cross-platform and more feature-rich. Maybe next year... :)  
 
 ##Prerequisites
+_By default, virga.app includes youtube-dl and ffmpeg._  
 [youtube-dl](https://www.yt-dl.org) is used by this app. The app bundle already comes with youtube-dl in it, but you can install youtube-dl manually (will be used if installed).  
-ffmpeg is optional (required for extracting audio from downloaded videos)
+ffmpeg is optional, but required for extracting audio from downloaded videos. Prebuilt ffmpeg binary comes inside virga.app as well.
 
-__Installing youtube-dl__  
-`youtube-dl` installation is _not_ required, as it comes inside this GUI app bundle, but if you like to have it properly installed:
-```
-sudo pip install --upgrade youtube_dl
-```
-or
-```
-brew install youtube-dl
-```
-For more installation options see http://rg3.github.io/youtube-dl/download.html
+__You can also download barebone virga.app without youtube-dl or ffmpeg bundled__ (in case you already have them installed).
 
-__Installing ffmpeg__  
-`ffmpeg` is not necessary for video downloads, but it is needed if you want to extract audio from downloaded videos (or download audio only). Easiest ways to install:
-```
-brew install ffmpeg 
-```
-or  
-```
-port install ffmpeg 
-```
-or simply download a binary from http://ffmpegmac.net/ and put it into your `/usr/local/bin/` dir.
-
-##Installation
+#Installation
 Download the _virga.app_ into your Applications folder and drag its icon onto your Dock.  
 The app uses notifications for output, so enable Banners in your Notifications Center for more verbose operation._
 
@@ -69,6 +50,8 @@ _Note: the app is currently unsigned (I am not a developer),_ thus you may need 
 ##Credits
 This GUI was inspired by Efty Edge's workflow for Alfred app, but none of his code was used in the end.
 Original thread: http://www.alfredforum.com/topic/1933-youtube-downloader-based-on-youtube-dl/  
+
+This software uses code of [FFmpeg](http://ffmpeg.org) licensed under the [LGPLv2.1](http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html)
 
 Thanks to Vitor Galvao for browser detection routine  
 https://gist.github.com/vitorgalvao/5392178  
