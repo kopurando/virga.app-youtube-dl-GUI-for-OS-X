@@ -5,6 +5,15 @@ youtube-dl-GUI aka virga.app
 Minimalistic one-button "GUI" for youtube-dl, written in AppleScript (hence for OS X only, tested in Mavericks and Yosemite).  
 This simple app lets you download videos and extract audio from websites like YouTube, Vimeo, Mixcloud, Soundcloud etc. with a click of a button in your Dock.
 
+##Usage
+1. Open a desired URL in Chrome or Safari.
+2. Click the app icon in your Dock.
+3. Profit!
+
+The app uses an URL from the frontmost browser tab/window, and communicates back using Notification Center.  You can close browser tab or switch to another tab as soon as you click virga, download will finish in the background.
+
+If you like to use [custom parameters](https://github.com/rg3/youtube-dl), just create `~/.config/youtube-dl/config` and virga will use it.
+
 ##Features
 * GUI w/o interface: click a button and job is done (most of the time)
 * Works with Safari and Chrome-based browsers
@@ -13,15 +22,17 @@ This simple app lets you download videos and extract audio from websites like Yo
 * Uses locally installed youtube-dl or prepackaged one (comes inside virga.app bundle)
 * Automatically updates youtube-dl if download fails
 
-##Usage
+###To do
+- ~~Work with any browser (Safari, Canary etc)~~
+- Auto-install ffmpeg ~~and youtube-dl~~ (if not installed)
+- ~~Auto-update yt-dn on request~~
+- Download progress output (e.g. use Dock badges)
+- Create an Apple dev. profile and sign the app bundle
+- Checkbox to open Terminal (for verbosity)
+- Interactive notifications (open downloads folder or downloaded file)
+- Resume after timeout/disconnection (catch "ERROR: unable to download video data: The read operation timed out", and retry download)  
 
-1. Open a desired URL in Chrome or Safari.
-2. Click the app icon in your Dock.
-3. Profit!
-
-The app uses an URL from the frontmost browser tab/window, and communicates back using Notification Center.   
-
-It would be a good idea to re-write this app in Python, to make it cross-platform and more feature-rich (see __To do__ section below). Maybe next year... :)  
+It would be a good idea to re-write whole app in Python, to make it cross-platform and more feature-rich. Maybe next year... :)  
 
 ##Prerequisites
 [youtube-dl](https://www.yt-dl.org) is used by this app. The app bundle already comes with youtube-dl in it, but you can install youtube-dl manually (will be used if installed).  
@@ -54,15 +65,6 @@ Download the _virga.app_ into your Applications folder and drag its icon onto yo
 The app uses notifications for output, so enable Banners in your Notifications Center for more verbose operation._
 
 _Note: the app is currently unsigned (I am not a developer),_ thus you may need to open System Preferences -> Security and Privacy -> General and allow virga.app to run. It is required only once. If this app becomes popular, I will sign the code to avoid this step.
-
-##To do
-- ~~Work with any browser (Safari, Canary etc)~~
-- Auto-update yt-dn on request
-- Auto-install ffmpeg ~~and youtube-dl~~ (if not installed)
-- Download progress output (e.g. use Dock badges)
-- Create an Apple dev. profile and sign the app bundle
-- Checkbox to open Terminal (for verbosity)
-- Interactive notifications (open downloads folder or downloaded file)
 
 ##Credits
 This GUI was inspired by Efty Edge's workflow for Alfred app, but none of his code was used in the end.
