@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleIconFile</key>
+	<string>applet.icns</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.apple.ScriptEditor.id.virga</string>
+	<key>CFBundleName</key>
+	<string>virga</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.0</string>
+	<key>WindowState</key>
+	<dict>
+		<key>dividerCollapsed</key>
+		<false/>
+		<key>eventLogLevel</key>
+		<integer>-1</integer>
+		<key>name</key>
+		<string>ScriptWindowState</string>
+		<key>positionOfDivider</key>
+		<real>333</real>
+		<key>savedFrame</key>
+		<string>28 258 602 597 0 0 1440 878 </string>
+		<key>selectedTabView</key>
+		<string>result</string>
+	</dict>
+</dict>
+</plist>
