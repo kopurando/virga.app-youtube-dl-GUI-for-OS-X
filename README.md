@@ -6,7 +6,7 @@ Minimalistic one-button "GUI" for youtube-dl, written in AppleScript (hence for 
 virga can download videos and extract audio from services like YouTube, Vimeo, Mixcloud, Soundcloud etc. with a click of a button in your Dock.
 
 #Installation
-Download the __[virga.app](https://github.com/kopurando/youtube-dl-GUI/releases/download/1.0.2/virga.app.zip)__ into your Applications folder and drag its icon onto your Dock.  
+Download the __[virga.app](https://github.com/kopurando/virga.app-youtube-dl-GUI-for-OS-X/releases/download/1.0.2/virga.app.zip)__ into your Applications folder and drag its icon onto your Dock.  
 The app uses notifications for output, so enable Banners in your Notifications Center for more verbose operation.
 
 _Note: the app is currently unsigned (I am not a developer),_ thus you may need to open System Preferences -> Security and Privacy -> General and allow virga.app to run. It is required only once. If this app becomes popular, I will sign the code to avoid this step.
@@ -39,7 +39,7 @@ _Default virga.app bundle includes youtube-dl, ffmpeg and rtmpdump._
 [youtube-dl](https://www.yt-dl.org) is used by this app. The app bundle  comes prepackaged with youtube-dl in it, but you can install youtube-dl manually (will be used if installed).  
 ffmpeg is optional, but required for extracting audio from downloaded videos. Prebuilt ffmpeg binary comes inside virga.app as well.
 
-__You can also download [virga barebone.app](https://github.com/kopurando/youtube-dl-GUI/releases/download/1.0.1/virga.barebone.app.zip) without youtube-dl, ffmpeg or rtmpdump bundled__ (in case you have them installed).
+__You can also download [virga barebone.app](https://github.com/kopurando/virga.app-youtube-dl-GUI-for-OS-X/releases/download/1.0.2/virga.barebone.app.zip) without youtube-dl, ffmpeg or rtmpdump bundled__ (in case you have them installed).
 
 ###To do
 - ~~Work with any browser (Safari, Canary etc)~~
