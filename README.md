@@ -17,7 +17,8 @@ _Note: the app is currently unsigned (I am not a developer),_ thus you may need 
 
 1. Open a desired URL in Chrome or Safari.
 2. Click the app icon in your Dock.
-3. Files are downloaded into your _Downloads/from youtube and others/_ folder
+3. Files are downloaded into your _Downloads/from youtube and others/_ folder. 
+
 You can start as many downloads as you like: everything will be done in parallel in the background.
 
 The app uses an URL from the frontmost browser tab/window, and communicates back using Notification Center.  You can close or switch to another tab as soon as you click virga, download will finish in  background.
