@@ -43,7 +43,7 @@ _Default virga.app bundle includes youtube-dl, ffmpeg and rtmpdump._
 [youtube-dl](https://www.yt-dl.org) is used by this app. The app bundle  comes prepackaged with youtube-dl in it, but you can install youtube-dl manually (will be used if installed).  
 ffmpeg is optional, but required for extracting audio from downloaded videos. Prebuilt ffmpeg binary comes inside virga.app as well.
 
-__You can also download [virga barebone.app](https://github.com/kopurando/virga.app-youtube-dl-GUI-for-OS-X/releases/download/1.0.2/virga.barebone.app.zip) without youtube-dl, ffmpeg or rtmpdump bundled__ (in case you have them installed).
+__You can also download [virga barebone.app](https://github.com/kopurando/virga.app-youtube-dl-GUI-for-OS-X/releases/download/1.0.4/virga.barebone.app.zip) without youtube-dl, ffmpeg or rtmpdump bundled__ (in case you have them installed).
 
 ###To do
 - ~~Work with any browser (Safari, Canary etc)~~
