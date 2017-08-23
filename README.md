@@ -5,6 +5,21 @@ virga.app: youtube downloader for OS X (GUI for youtube-dl)
 Minimalistic one-button "GUI" for youtube-dl, written in AppleScript (hence for OS X only, tested in Mavericks, Yosemite and El Capitan).  
 virga can download videos and extract audio from services like YouTube, Vimeo, Mixcloud, Soundcloud etc. with a click of a button in your Dock.
 
+#August 2017 note
+A recent combination of youtube-dl & Python introduces the following error when trying to download videos from YouTube:
+`insecure string pickle` 🥒
+
+To fix, install libav:
+`brew install libav`
+
+Or update Python to 2.7.13:
+https://www.python.org/downloads/release/python-2713/
+
+More details:
+https://github.com/rg3/youtube-dl/issues/7172#issuecomment-242961695
+https://stackoverflow.com/a/41155029/1559834
+
+
 #Installation
 Download the __[virga.app](https://github.com/kopurando/virga.app-youtube-dl-GUI-for-OS-X/releases/download/1.0.5/virga.app.zip)__ into your Applications folder and drag its icon onto your Dock.  
 The app uses notifications for output, so enable Banners for _Script editor_ in your Notifications Center for more verbose operation.
