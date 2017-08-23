@@ -5,7 +5,7 @@ virga.app: youtube downloader for OS X (GUI for youtube-dl)
 Minimalistic one-button "GUI" for youtube-dl, written in AppleScript (hence for OS X only, tested in Mavericks, Yosemite and El Capitan).  
 virga can download videos and extract audio from services like YouTube, Vimeo, Mixcloud, Soundcloud etc. with a click of a button in your Dock.
 
-#August 2017 note
+# August 2017 note
 A recent combination of youtube-dl & Python introduces the following error when trying to download videos from YouTube:
 `insecure string pickle` 🥒
 
@@ -20,13 +20,13 @@ https://github.com/rg3/youtube-dl/issues/7172#issuecomment-242961695
 https://stackoverflow.com/a/41155029/1559834
 
 
-#Installation
+# Installation
 Download the __[virga.app](https://github.com/kopurando/virga.app-youtube-dl-GUI-for-OS-X/releases/download/1.0.5/virga.app.zip)__ into your Applications folder and drag its icon onto your Dock.  
 The app uses notifications for output, so enable Banners for _Script editor_ in your Notifications Center for more verbose operation.
 
 _Note: the app is currently unsigned (I am not a developer),_ thus you may need to open System Preferences -> Security and Privacy -> General and allow virga.app to run. It is required only once. If this app becomes popular, I will sign the code to avoid this step.
 
-##Usage
+## Usage
 
 <a href="https://youtu.be/FW3T5_V0pT0" target="_blank"><img src="http://share.gifyoutube.com/Kr1XEQ.gif"></a>
 
@@ -40,7 +40,7 @@ The app uses an URL from the frontmost browser tab/window, and communicates back
 
 If you like to use [youtube-dl custom parameters](https://github.com/rg3/youtube-dl), just create `~/.config/youtube-dl/config` and virga will use it.
 
-##Features
+## Features
 * GUI w/o interface: just click a button and job is done (most of the time)
 * Downloads video or audio (or both) from any of the sites supported by youtube-dl ([full  list](http://rg3.github.io/youtube-dl/supportedsites.html), updated constantly)
 * Downloads search results (e.g. search on youtube), __use with cauton!__ There is no "Stop" button yet :) 
@@ -53,14 +53,14 @@ If you like to use [youtube-dl custom parameters](https://github.com/rg3/youtube
 (https://dl.dropboxusercontent.com/u/3635046/nert.png)
 
 
-##Prerequisites
+## Prerequisites
 _Default virga.app bundle includes youtube-dl, ffmpeg and rtmpdump._  
 [youtube-dl](https://www.yt-dl.org) is used by this app. The app bundle  comes prepackaged with youtube-dl in it, but you can install youtube-dl manually (will be used if installed).  
 ffmpeg is optional, but required for extracting audio from downloaded videos. Prebuilt ffmpeg binary comes inside virga.app as well.
 
 __You can also download [virga barebone.app](https://github.com/kopurando/virga.app-youtube-dl-GUI-for-OS-X/releases/download/1.0.5/virga.barebone.app.zip) without youtube-dl, ffmpeg or rtmpdump bundled__ (in case you have them installed).
 
-###To do
+### To do
 - ~~Work with any browser (Safari, Canary etc)~~
 - ~~Auto-install ffmpeg and youtube-dl (if not installed)~~
 - ~~Auto-update yt-dn on request~~
@@ -75,7 +75,7 @@ __You can also download [virga barebone.app](https://github.com/kopurando/virga.
 It is my first experience with Applescript, and I think, it gave me significant brain damage already.  
 It would be a good idea to re-write the app in Python, make it cross-platform and more feature-rich. Maybe next year... :)  
 
-##Credits
+## Credits
 This GUI was inspired by Efty Edge's workflow for Alfred app, but none of his code was used in the end.
 Original thread: http://www.alfredforum.com/topic/1933-youtube-downloader-based-on-youtube-dl/  
 
